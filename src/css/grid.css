@@ -1,0 +1,77 @@
+/*
+ * Content List, Gutenberg Block - Grid
+ */
+
+.cl-block__grid-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cl-block__grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cl-block__grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cl-block__grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cl-block__grid-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.cl-block__grid {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.cl-block__grid-item {
+    opacity: 0.4;
+    padding: 10px;
+    position: relative;
+}
+
+.cl-block__sort-helper .cl-block__grid-item:hover {
+    cursor: grabbing;
+}
+
+.cl-block__sort-helper .cl-block__grid-item {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba( 255, 255, 255, 0.6);
+    z-index: 200000;
+}
+
+.cl-block__sort-helper .cl-block__grid-item-header {
+   opacity: 1;
+}
+
+.cl-block__grid-item-header {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+.cl-block__grid-item-header a {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.cl-block__grid-item-header svg {
+    fill: rgba(17, 160, 210, 1);
+}
+
+.cl-block__grid-item-header > * {
+    background: #f1f1f1;
+    display: block;
+    height: 30px;
+    line-height: 38px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.cl-block__grid-item:hover .cl-block__grid-item-header {
+    opacity: 1;
+}

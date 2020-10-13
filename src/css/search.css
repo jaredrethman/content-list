@@ -1,0 +1,48 @@
+/*
+ * Content List, Gutenberg Block - Search
+ */
+
+.cl-block__search {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.4s, background-color 0.4s;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.cl-search-form__form .components-base-control .components-base-control__label {
+    display: block;
+}
+
+.cl-search-form__form select {
+    max-width: 100%;
+}
+
+.cl-block__search.cl-block__search-visible {
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.cl-search-form__form {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    padding: 38px 20px 20px;
+    pointer-events: auto;
+    overflow-y: auto;
+    position: relative;
+}
+
+.cl-search-form__form .components-icon-button {
+    padding: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

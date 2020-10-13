@@ -1,0 +1,587 @@
+/*
+ * Content List, Gutenberg Block - Autocomplete
+ * https://raw.githubusercontent.com/alphagov/accessible-autocomplete/master/dist/accessible-autocomplete.min.css
+ */
+
+.autocomplete__wrapper {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.autocomplete__hint, .autocomplete__input {
+    -webkit-appearance: none;
+    border: 2px solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%
+}
+
+.autocomplete__input {
+    background-color: transparent;
+    position: relative
+}
+
+.autocomplete__hint {
+    color: #bfc1c3;
+    position: absolute
+}
+
+.autocomplete__input--default {
+    padding: 4px
+}
+
+.autocomplete__input--focused {
+    outline-offset: 0;
+}
+
+.autocomplete__input--show-all-values {
+    padding: 4px 34px 4px 4px;
+    cursor: pointer
+}
+
+.autocomplete__dropdown-arrow-down {
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    top: 10px
+}
+
+.autocomplete__menu {
+    border-top: 0;
+    color: #34384b;
+    margin: 0;
+    max-height: 342px;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+.cl-block__search .autocomplete__menu li {
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-size: 1em;
+}
+
+.cl-block__search .autocomplete__menu {
+    list-style: none;
+    width: 100%;
+    font-size: 0.75em;
+    margin-bottom: 0;
+}
+
+.cl-block__search .autocomplete__input {
+    width: 100%;
+}
+
+.cl-block__search .autocomplete__wrapper {
+    position: relative;
+}
+
+.autocomplete__menu {
+    background-color: #f1f1f1;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+}
+
+.autocomplete__menu--visible {
+    display: block
+}
+
+.autocomplete__menu--hidden {
+    display: none
+}
+
+.autocomplete__menu--overlay {
+    box-shadow: rgba(0, 0, 0, .256863) 0 2px 6px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 100
+}
+
+.autocomplete__menu--inline {
+    position: relative
+}
+
+.autocomplete__option {
+    border-bottom: solid #bfc1c3;
+    border-width: 1px 0;
+    cursor: pointer;
+    display: block;
+    position: relative
+}
+
+.autocomplete__option > * {
+    pointer-events: none
+}
+
+.autocomplete__option:first-of-type {
+    border-top-width: 0
+}
+
+.autocomplete__option:last-of-type {
+    border-bottom-width: 0
+}
+
+.autocomplete__option--odd {
+    background-color: #fafafa
+}
+
+.autocomplete__option--focused, .autocomplete__option:hover {
+    background-color: #005ea5;
+    color: #fff;
+    outline: 0
+}
+
+.autocomplete__option--no-results {
+    background-color: #fafafa;
+    color: #646b6f;
+    cursor: not-allowed
+}
+
+.autocomplete__hint, .autocomplete__input, .autocomplete__option {
+    font-size: 16px;
+    line-height: 1.25
+}
+
+.autocomplete__hint, .autocomplete__option {
+    padding: 4px
+}
+
+@media (min-width: 641px) {
+    .autocomplete__hint, .autocomplete__input, .autocomplete__option {
+        font-size: 19px;
+        line-height: 1.31579
+    }
+}
+/*
+ * Content List, Gutenberg Block - Inspector Controls
+ */
+
+/* Display */
+.cl-block__controls-display {
+    position: relative;
+}
+body > .cl-block__controls-display-item {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.cl-block__controls-display-item{
+    z-index: 20000;
+}
+.cl-block__controls-display-item {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 14px 10px 10px 10px;
+}
+.cl-block__controls-display-item-toggle .components-base-control__field,
+.cl-block__controls-display-item-toggle .components-toggle-control{
+    margin-bottom: 0;
+}
+.cl-block__controls-display-item-toggle {
+    width: 80%;
+}
+.cl-block__controls-display-item-handle {
+    width: 20%;
+    text-align: right;
+}
+
+.cl-block__controls-display-separator {
+    width: 100%;
+}
+
+.cl-block__controls-display-item-separator {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cl-block__controls-display-separator {
+    background-color: #eaeaea;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cl-block__controls-display-separator svg{
+    width: 10px;
+    height: 10px;
+}
+
+.cl-block__inspector-control{
+    position: relative;
+}
+/*
+ * Content List, Gutenberg Block - Grid
+ */
+
+.cl-block__grid-col-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cl-block__grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cl-block__grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cl-block__grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cl-block__grid-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.cl-block__grid {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.cl-block__grid-item {
+    opacity: 0.4;
+    padding: 10px;
+    position: relative;
+}
+
+.cl-block__sort-helper .cl-block__grid-item:hover {
+    cursor: grabbing;
+}
+
+.cl-block__sort-helper .cl-block__grid-item {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba( 255, 255, 255, 0.6);
+    z-index: 200000;
+}
+
+.cl-block__sort-helper .cl-block__grid-item-header {
+   opacity: 1;
+}
+
+.cl-block__grid-item-header {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+.cl-block__grid-item-header a {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.cl-block__grid-item-header svg {
+    fill: rgba(17, 160, 210, 1);
+}
+
+.cl-block__grid-item-header > * {
+    background: #f1f1f1;
+    display: block;
+    height: 30px;
+    line-height: 38px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.cl-block__grid-item:hover .cl-block__grid-item-header {
+    opacity: 1;
+}
+.cl-float-right {
+    float: right;
+}
+
+.cl-block__right-align {
+    padding-left: 10px;
+}
+
+.cl-block__text-sml {
+    font-size: 0.8em;
+}
+
+.cl-block__help {
+    min-height: 25px;
+    width: 20px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.6s;
+    z-index: 30;
+}
+
+.cl-block__inspector-control:hover .cl-block__help {
+    opacity: 0.8;
+}
+/*
+ * Content List, Gutenberg Block - Search
+ */
+
+.cl-block__search {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.4s, background-color 0.4s;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.cl-search-form__form .components-base-control .components-base-control__label {
+    display: block;
+}
+
+.cl-search-form__form select {
+    max-width: 100%;
+}
+
+.cl-block__search.cl-block__search-visible {
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.cl-search-form__form {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    padding: 38px 20px 20px;
+    pointer-events: auto;
+    overflow-y: auto;
+    position: relative;
+}
+
+.cl-search-form__form .components-icon-button {
+    padding: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.cl-block__taxonomy-terms {
+    margin-bottom: 16px;
+}
+
+.cl-block__tokens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.cl-block__token {
+    max-width: 50%;
+}
+
+.cl-block__token .components-form-token-field__token-text {
+    padding: 0 4px;
+}
+
+.cl-block__taxonomy-terms__button {
+    margin-top: 10px;
+}
+.cl-block__admin-notice {
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
+    padding: 4px 12px;
+}
+.cl-block__admin-notice-text.notice-warning {
+    color: #dc8e3b;
+}
+
+.cl-block__admin-notice.notice-warning {
+    border-left-color: #dc8e3b;
+}
+
+.cl-block__admin-notice.notice-error {
+    border-left-color: #dc3232;
+}
+
+.cl-block__admin-notice.notice-success {
+    border-left-color: #27a933;
+}
+
+.cl-block__admin-notice.notice-info {
+    border-left-color: #0073a9;
+}
+/*
+ * Content List, Gutenberg Block
+ */
+
+/* Dependencies */
+
+/* Globals */
+
+.wp-block-content-list {
+    font-size: 16px;
+}
+
+.cl-block__sort-handle,
+.cl-block__controls-display-separator {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.cl-block__sort-handle:active,
+.cl-block__controls-display-separator:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.wp-block-content-list .cl-block__grid-item {
+    opacity: 1;
+}
+
+.autocomplete__wrapper,
+.cl-block__taxonomy-terms {
+    width: 100%;
+}
+
+/* Placeholders */
+
+.cl-block__date-placeholder,
+.cl-block__excerpt-placeholder,
+.cl-block__content-attachment,
+.cl-block__taxonomy-placeholder,
+.cl-block__title-placeholder {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cl-block__date-placeholder:empty,
+.cl-block__content-attachment:empty,
+.cl-block__excerpt-placeholder:empty,
+.cl-block__taxonomy-placeholder:empty,
+.cl-block__title-placeholder:empty {
+    background-color: #dbdbdb;
+}
+
+.cl-block__excerpt-placeholder {
+    background-color: transparent;
+    min-height: 5px;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.cl-block__taxonomy-placeholder {
+    background-color: transparent;
+    min-height: 15px;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.cl-block__date-placeholder {
+    background-color: transparent;
+    min-height: 10px;
+    width: 60%;
+    font-size: 0.8em;
+}
+
+.cl-block__title-placeholder {
+    background-color: transparent;
+    width: 90%;
+    font-size: 1em;
+    min-height: 20px;
+}
+
+.cl-block__date-placeholder {
+    background-color: transparent;
+    width: 70%;
+    font-size: 0.6em;
+}
+
+.cl-block__content-attachment:empty {
+    background-color: #e2e3e4;
+    padding-bottom: 56.25%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cl-block__content-attachment:empty:before {
+    color: #ffffff;
+    content: "\f306";
+    font-family: dashicons;
+    font-size: 3em;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.cl-block__content-attachment > * {
+}
+
+.cl-block__content-attachment img {
+    width: 100%;
+}
+
+/* Loader */
+@-webkit-keyframes placeHolderShimmer {
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+@keyframes placeHolderShimmer {
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.cl-block__loading div.cl-block__content-attachment,
+.cl-block__loading div:empty {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+            animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    background: linear-gradient(to right, #dbdbdb 8%, #eeeeee 18%, #dbdbdb 33%);
+    background-size: 800px 504px;
+    position: relative;
+    -webkit-backface-visibility: hidden
+}
+
+/* Header */
+
+.cl-block__title {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Orientation */
+
+.cl-block__orientation-landscape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cl-block__orientation-landscape .cl-block__content-attachment:empty {
+    padding-bottom: 100%;
+}
+
+.cl-block__orientation-landscape .cl-block__content-attachment img {
+    height: 100%;
+}
+
+.cl-block__orientation-landscape > div {
+    width: 50%;
+}
+
+
+/*# sourceMappingURL=content-list.css.map*/

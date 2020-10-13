@@ -1,0 +1,27 @@
+.cl-block__admin-notice {
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
+    padding: 4px 12px;
+}
+.cl-block__admin-notice-text.notice-warning {
+    color: #dc8e3b;
+}
+
+.cl-block__admin-notice.notice-warning {
+    border-left-color: #dc8e3b;
+}
+
+.cl-block__admin-notice.notice-error {
+    border-left-color: #dc3232;
+}
+
+.cl-block__admin-notice.notice-success {
+    border-left-color: #27a933;
+}
+
+.cl-block__admin-notice.notice-info {
+    border-left-color: #0073a9;
+}

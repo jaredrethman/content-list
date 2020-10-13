@@ -1,0 +1,20 @@
+.cl-block__taxonomy-terms {
+    margin-bottom: 16px;
+}
+
+.cl-block__tokens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.cl-block__token {
+    max-width: 50%;
+}
+
+.cl-block__token .components-form-token-field__token-text {
+    padding: 0 4px;
+}
+
+.cl-block__taxonomy-terms__button {
+    margin-top: 10px;
+}

@@ -1,0 +1,41 @@
+.cl-block__grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cl-block__cols-2 article {
+    width: 50%;
+}
+
+.cl-block__cols-3 article {
+    width: 33.3333%;
+}
+
+.cl-block__content-landscape article {
+    display: flex;
+}
+
+.cl-block__cols-1 .cl-block__content {
+    width: 100%;
+}
+
+.cl-block__cols-2 .cl-block__content {
+    width: 50%;
+}
+
+.cl-block__cols-3 .cl-block__content {
+    width: 33.3333%;
+}
+
+.cl-block__content-landscape .cl-block__content-right {
+    padding-left: 10px;
+}
+
+.wp-block-content-list h3 {
+    font-size: 0.8em;
+    margin: 1rem 0;
+}
+
+.cl-block__terms {
+    font-size: 0.7em;
+}

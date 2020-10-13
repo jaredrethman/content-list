@@ -1,0 +1,162 @@
+/*
+ * Content List, Gutenberg Block
+ */
+
+/* Dependencies */
+
+@import 'autocomplete.css';
+@import 'inspector-controls.css';
+@import 'utils.css';
+@import 'search.css';
+@import 'taxonomy-terms.css';
+@import 'notice.css';
+
+/* Globals */
+
+.wp-block-content-list {
+    font-size: 16px;
+}
+
+.cl-block__sort-handle,
+.cl-block__controls-display-separator {
+    cursor: grab;
+}
+
+.cl-block__sort-handle:active,
+.cl-block__controls-display-separator:active {
+    cursor: grabbing;
+}
+
+.wp-block-content-list .cl-block__grid-item {
+    opacity: 1;
+}
+
+.autocomplete__wrapper,
+.cl-block__taxonomy-terms {
+    width: 100%;
+}
+
+/* Placeholders */
+
+.cl-block__date-placeholder,
+.cl-block__excerpt-placeholder,
+.cl-block__content-attachment,
+.cl-block__taxonomy-placeholder,
+.cl-block__title-placeholder {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cl-block__date-placeholder:empty,
+.cl-block__content-attachment:empty,
+.cl-block__excerpt-placeholder:empty,
+.cl-block__taxonomy-placeholder:empty,
+.cl-block__title-placeholder:empty {
+    background-color: #dbdbdb;
+}
+
+.cl-block__excerpt-placeholder {
+    background-color: transparent;
+    min-height: 5px;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.cl-block__taxonomy-placeholder {
+    background-color: transparent;
+    min-height: 15px;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.cl-block__date-placeholder {
+    background-color: transparent;
+    min-height: 10px;
+    width: 60%;
+    font-size: 0.8em;
+}
+
+.cl-block__title-placeholder {
+    background-color: transparent;
+    width: 90%;
+    font-size: 1em;
+    min-height: 20px;
+}
+
+.cl-block__date-placeholder {
+    background-color: transparent;
+    width: 70%;
+    font-size: 0.6em;
+}
+
+.cl-block__content-attachment:empty {
+    background-color: #e2e3e4;
+    padding-bottom: 56.25%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cl-block__content-attachment:empty:before {
+    color: #ffffff;
+    content: "\f306";
+    font-family: dashicons;
+    font-size: 3em;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.cl-block__content-attachment > * {
+}
+
+.cl-block__content-attachment img {
+    width: 100%;
+}
+
+/* Loader */
+@keyframes placeHolderShimmer {
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.cl-block__loading div.cl-block__content-attachment,
+.cl-block__loading div:empty {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, #dbdbdb 8%, #eeeeee 18%, #dbdbdb 33%);
+    background-size: 800px 504px;
+    position: relative;
+    -webkit-backface-visibility: hidden
+}
+
+/* Header */
+
+.cl-block__title {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Orientation */
+
+.cl-block__orientation-landscape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cl-block__orientation-landscape .cl-block__content-attachment:empty {
+    padding-bottom: 100%;
+}
+
+.cl-block__orientation-landscape .cl-block__content-attachment img {
+    height: 100%;
+}
+
+.cl-block__orientation-landscape > div {
+    width: 50%;
+}

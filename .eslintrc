@@ -1,0 +1,23 @@
+{
+	"extends": "@10up/eslint-config",
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error"
+	},
+	"globals": {
+		"wp": true,
+		"tenUp": true,
+		"module":true,
+		"NODE_ENV": true,
+		"require": true,
+		"process": true,
+		"__dirname": true,
+		"global": true,
+		"test": true,
+		"expect": true,
+		"describe": true
+	}
+}

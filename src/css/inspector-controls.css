@@ -1,0 +1,55 @@
+/*
+ * Content List, Gutenberg Block - Inspector Controls
+ */
+
+/* Display */
+.cl-block__controls-display {
+    position: relative;
+}
+body > .cl-block__controls-display-item {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.cl-block__controls-display-item{
+    z-index: 20000;
+}
+.cl-block__controls-display-item {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 14px 10px 10px 10px;
+}
+.cl-block__controls-display-item-toggle .components-base-control__field,
+.cl-block__controls-display-item-toggle .components-toggle-control{
+    margin-bottom: 0;
+}
+.cl-block__controls-display-item-toggle {
+    width: 80%;
+}
+.cl-block__controls-display-item-handle {
+    width: 20%;
+    text-align: right;
+}
+
+.cl-block__controls-display-separator {
+    width: 100%;
+}
+
+.cl-block__controls-display-item-separator {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cl-block__controls-display-separator {
+    background-color: #eaeaea;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cl-block__controls-display-separator svg{
+    width: 10px;
+    height: 10px;
+}
+
+.cl-block__inspector-control{
+    position: relative;
+}
