@@ -28,6 +28,3 @@
 
 ## Known issues:
 * When `npm run dev` & `SCRIPT_DEBUG` is set to true. There is a warning in the console relating to React Sortable HOC on this [issue](https://github.com/styled-components/styled-components/issues/2154).
-
-## WIKI:
-* See here - https://gitlab.10up.com/jared.rethman/content-list/-/wikis/home
