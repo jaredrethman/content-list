@@ -107,7 +107,7 @@ addFilter(
 
 </details>
 
-![Screenshot_2020-02-25_at_22.40.17](uploads/b5574f6570f2259c5e8ffb62eb5e0ca4/Screenshot_2020-02-25_at_22.40.17.png)
+![Screenshot_2020-02-25_at_22.40.17](https://github.com/jaredrethman/content-list/blob/master/wiki/uploads/b5574f6570f2259c5e8ffb62eb5e0ca4/Screenshot_2020-02-25_at_22.40.17.png)
 
 ### PHP:
 
